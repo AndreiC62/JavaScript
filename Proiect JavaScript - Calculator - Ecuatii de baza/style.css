@@ -1,0 +1,58 @@
+.titlu {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.date {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+input {
+  text-align: center;
+  width: 120px;
+}
+
+.calculator {
+  border: 2px solid black;
+  width: 320px;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+body {
+  background: rgb(34, 36, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(34, 36, 0, 1) 0%,
+    rgba(45, 121, 9, 1) 35%,
+    rgba(0, 255, 123, 1) 100%
+  );
+}
+
+#JS {
+  color: rgb(181, 10, 10);
+}
+
+#calcul {
+  margin-top: 10px;
+  font-size: 18px;
+  width: 100%;
+  padding: 4px;
+  /* text-transform: uppercase; */
+}
+
+.operatiiDisponibile {
+  font-size: 18px;
+}
+
+#rezultat {
+  margin-top: -15px;
+}
+
+.denumireProiect {
+  margin-top: -20px;
+}
