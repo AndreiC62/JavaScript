@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Advanced CSS 1</title>
+
+    <style>
+      #some-id {
+        width: 300px;
+        height: 300px;
+        background-color: red;
+      }
+
+      a[target] {
+        color: red;
+      }
+
+      /* a[target="_blank"] {        se va executa doar elementelor care au "_target" setat pe _blanks
+        color: yellow;
+      } */
+
+      /* div[class*="wrap"] {          se executa daca gaseste div-uri care in valoarea clasei se gasesc urmatoarele 
+        background-color: yellow;                                                caractere "wrap". poate sa fie "wrapper"
+      } */
+
+      /* a[href^="http://www.link-group.eu"]        atributele care incep cu...
+      {
+        color: red;
+      } */
+
+      /* a[href$=".pdf"] {           atributele care se termina cu...
+        font-style: italic;
+      } */
+
+      a[title~="link"] {
+        color: red;
+      }
+
+      [class|="top"] {
+        background: yellow;
+      }
+
+      /* --------------------------------------------------------------------- */
+    </style>
+  </head>
+  <body>
+    <div id="some-id"></div>
+    <br />
+
+    <a href="https://www.google.ro/" target="_blank">Google</a>
+
+    <a href="http://www.link-group.eu" target="_blank" title="link"
+      >Link Group</a
+    >
+    <a href="http://www.link-group.eu/careers" title="link careers"
+      >Link Careers</a
+    >
+    <a href="http://www.link-group.eu/about-us-0" title="about-link"
+      >About Link</a
+    >
+
+    <h1 class="top-header">Welcome</h1>
+    <p class="top-text">Hello world!</p>
+    <p class="top">Hello world again!</p>
+    <p class="top text">Hello world once more!</p>
+  </body>
+</html>
