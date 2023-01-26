@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Advanced CSS - Assignment 1</title>
+    <style>
+      /* -------------- Punctul 1 - "textul tuturor linkurilor care indică una dintre adresele care îi aparţin site-ului Google trebuie colorat cu verde;" */
+
+      a[href*="google"] {
+        color: green;
+      }
+
+      /* -------------- Punctul 2 - "textul linkului care indică site-ul LINK group trebuie colorat cu roşu;"/
+
+      /* a[href*="link-group"] {
+        color: red;
+      } */
+
+      /* SAU... */
+
+      /* a[target="_blank"] {
+        color: red;
+      } */
+
+      /* SAU... */
+
+      a[href = "https://www.link-group.eu/"]
+      {
+        color: red;
+      }
+
+      /* -------------- Punctul 3 - "paragrafele din cadrul elementului second-div trebuie colorate alternativ cu roşu și albastru " */
+
+      #second-div p:nth-child(2n + 1) {
+        color: blue;
+      }
+
+      #second-div p:nth-child(2n + 2) {
+        color: red;
+      }
+
+      /* -------------- Punctul 4 - "la sfârşitul Paragrafului 2 şi Paragrafului 3, folosind CSS, adăugaţi textul – NEW, care va fi galben" */
+
+      #first-div > p::after {
+        content: "NEW";
+        color: rgb(230, 230, 15);
+        font-style: italic;
+      }
+
+      /* -------------- Punctul 4 - "trecând mouse-ul peste elementul Paragraph 10, textul său trebuie să devină înclinat/italic." */
+
+      body > p:last-of-type:hover {
+        font-style: italic;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Main Heading</h1>
+    <p>Paragraph 1</p>
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.google.com/doodles">Google Doodles</a>
+    <a href="https://www.link-group.eu/" target="_blank">Goto Link Group</a>
+    <div id="first-div">
+      <h2>Subheading</h2>
+      <p>Paragraph 2</p>
+      <p>Paragraph 3</p>
+      <div id="second-div">
+        <h3>Sub subheading</h3>
+        <p>Paragraph 4</p>
+        <p>Paragraph 5</p>
+        <p>Paragraph 6</p>
+        <p>Paragraph 7</p>
+        <p>Paragraph 8</p>
+      </div>
+    </div>
+    <p>Paragraph 9</p>
+    <p>Paragraph 10</p>
+  </body>
+</html>
