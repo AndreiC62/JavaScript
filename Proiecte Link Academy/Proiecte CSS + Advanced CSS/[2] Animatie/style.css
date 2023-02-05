@@ -1,8 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 h1 {
   color: rgb(215, 215, 215);
   text-align: center;
@@ -13,6 +8,10 @@ body {
   background-color: #050210;
 }
 
+.container {
+  overflow: hidden;
+}
+
 .circle {
   position: relative;
   margin: 100px auto;
@@ -20,7 +19,7 @@ body {
   height: 400px;
   border-radius: 50%;
   background-image: linear-gradient(#fb5dad, #55fb9f, #b97aff);
-  animation: animate 2s linear infinite;
+  animation: animate 2s linear infinite forwards;
 }
 
 .circle span {
@@ -29,7 +28,7 @@ body {
   height: 100%;
   border-radius: 50%;
   background-image: linear-gradient(#fb5dad, #55fb9f, #b97aff);
-  animation: animate 2s linear infinite;
+  animation: animate 2s linear infinite forwards;
 }
 
 .circle span:nth-child(1) {
@@ -39,7 +38,7 @@ body {
   filter: blur(15px);
 }
 .circle span:nth-child(3) {
-  filter: blur(20px);
+  filter: blur(25px);
 }
 
 .circle::before {
@@ -58,16 +57,17 @@ body {
 .circle::after {
   content: "";
   position: absolute;
-  width: 1px;
-  height: 1px;
-  border-radius: 50%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
   background-color: #1f0b70;
   z-index: 2;
   opacity: 0.1;
   animation: puls 1s ease-out infinite;
+  transform-origin: center;
 }
 
 @keyframes animate {
@@ -80,10 +80,10 @@ body {
 }
 
 @keyframes puls {
-  0% {
-    transform: scale(0, 0);
+  from {
+    transform: scale(0);
   }
-  100% {
-    transform: scale(330, 330);
+  to {
+    transform: scale(335);
   }
 }
