@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carusel</title>
+    <style>
+      .tile {
+        width: 300px;
+        height: 220px;
+        border-radius: 8px;
+        position: absolute;
+        margin: 0 auto;
+        opacity: 0.95;
+      }
+
+      #main-container {
+        perspective: 400px;
+        position: relative;
+        width: 300px;
+        height: 220px;
+        margin: 80px auto;
+      }
+
+      #tile-container {
+        transform: translateZ(-300px) rotate3d(0, 1, 0, 0deg);
+        transform-style: preserve-3d;
+      }
+
+      #tile-1 {
+        background-color: rgb(127, 17, 107);
+        transform: rotateY(0deg) translateZ(300px);
+      }
+
+      #tile-2 {
+        background-color: rgb(255, 170, 0);
+        transform: rotateY(72deg) translateZ(300px);
+      }
+
+      #tile-3 {
+        background-color: rgb(0, 8, 255);
+        transform: rotateY(144deg) translateZ(300px);
+      }
+
+      #tile-4 {
+        background-color: rgb(255, 0, 123);
+        transform: rotateY(216deg) translateZ(300px);
+      }
+
+      #tile-5 {
+        background-color: rgb(255, 0, 0);
+        transform: rotateY(288deg) translateZ(300px);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="tile-container">
+        <div class="tile" id="tile-1"></div>
+        <div class="tile" id="tile-2"></div>
+        <div class="tile" id="tile-3"></div>
+        <div class="tile" id="tile-4"></div>
+        <div class="tile" id="tile-5"></div>
+      </div>
+    </div>
+  </body>
+</html>
