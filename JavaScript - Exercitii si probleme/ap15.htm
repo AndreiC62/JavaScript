@@ -8,9 +8,17 @@
   </head>
   <body>
     <script>
-      for (let i = 3; i <= 8; i++) {
-        console.log("Hello");
+      function add() {
+        let counter = 0;
+
+        function plus() {
+          counter += 1;
+        }
+        plus();
+        return console.log(counter);
       }
+
+      add();
     </script>
   </body>
 </html>
