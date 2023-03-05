@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator - Volumul Cilindrului</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+
+    <link
+      type="image/png"
+      sizes="16x16"
+      rel="icon"
+      href="./fav/icons8-calculator-cloud-16.png"
+    />
+    <link
+      type="image/png"
+      sizes="32x32"
+      rel="icon"
+      href="./fav/icons8-calculator-cloud-32.png"
+    />
+    <link
+      type="image/png"
+      sizes="96x96"
+      rel="icon"
+      href="./fav/icons8-calculator-cloud-96.png"
+    />
+    <link
+      type="image/png"
+      sizes="120x120"
+      rel="icon"
+      href="./fav/icons8-calculator-cloud-120.png"
+    />
+  </head>
+  <body>
+    <div class="titlu">
+      <h1>Calculator Retete Big Belly</h1>
+      <p>Află cantitatea de ingrediente / kg.</p>
+    </div>
+
+    <!-- Get Data from User -->
+    <div class="calculator">
+      <form action="#" class="date">
+        <label for="inaltime" title="Cantitatea care iese dintr-o tură / porție"
+          >Introdu cantitatea totală procesată:</label
+        >
+        <input type="number" id="total" name="total" />
+        <br />
+        <br />
+
+        <label
+          for="raza"
+          title="Cantitatea ingredientului care intră într-o tură / porție"
+          >Introdu cantitatea ingredientului:</label
+        >
+        <input type="number" id="cant" name="cant" />
+
+        <h3>Rezultat:</h3>
+        <p id="rezultat">0</p>
+
+        <button onclick="calculation()" id="calcul" type="button">
+          Calculează
+        </button>
+      </form>
+    </div>
+
+    <script>
+      function calculation() {
+        // calculator JS
+
+        let cantitateIngredient = document.getElementById("cant").value;
+        let cantitateaTotala = document.getElementById("total").value;
+
+        let final = cantitateIngredient / cantitateaTotala;
+
+        console.log(final);
+        document.getElementById("rezultat").textContent = final;
+      }
+
+      let camp2 = document.getElementById("cant");
+      let camp1 = document.getElementById("total");
+
+      camp2.addEventListener("keypress", function (event) {
+        // If the user presses the "Enter" key on the keyboard
+        if (event.key === "Enter") {
+          // Cancel the default action, if needed
+          event.preventDefault();
+          // Trigger the button element with a click
+          document.getElementById("calcul").click();
+        }
+      });
+
+      camp1.addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+          event.preventDefault();
+
+          document.getElementById("calcul").click();
+        }
+      });
+    </script>
+  </body>
+</html>
