@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proiect Bootrstrap - Website Layout</title>
+
+    <!-- import bootstrap & CSS files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="../[1] Bootstrap Website Layout/css/styles.css"
+    />
+
+    <!-- import fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luxurious+Script&family=Oswald:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="navigation-bar">
+      <div class="container-fluid">
+        <div class="row p-3 align-items-center">
+          <div class="col-6 offset-md-1 col-md-3 h2 my-website">Cazac Andrei</div>
+          <div
+            class="d-none d-md-none d-xl-block col-8 text-right align-self-center nav-links"
+          >
+            <a href="#" class="text-decoration-none p-2 text-dark">Home</a>
+            <a href="#recent-work" class="text-decoration-none p-2 text-secondary"
+              >Portfolio</a
+            >
+            <a href="#" class="text-decoration-none p-2 text-secondary"
+              >Staff</a
+            >
+            <a href="#" class="text-decoration-none p-2 text-secondary"
+              >Features</a
+            >
+            <a href="#" class="text-decoration-none p-2 text-secondary">Blog</a>
+            <a href="#" onclick="alert('ERROR 404: file not found')" class="text-decoration-none p-2 text-secondary"
+              >Download</a
+            >
+          </div>
+          <div
+            class="col-6 col-md-8 d-xl-none text-right align-self-center vertical-align-center"
+            id="hamburger"
+          >
+            <img
+              class="hamburger-menu align-self-center"
+              src="../[1] Bootstrap Website Layout/img/menu.png"
+              alt="hamburger menu"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hero-section">
+      <div class="container-fluid">
+        <div class="col-12">
+          <p
+            class="hero-paragraph text-light col-12 text-center mt-5 col-md-7 offset-md-2 col-xl-5 offset-xl-1"
+          >
+            We strive to make all our creations exquisite
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="description-section">
+      <div class="container medium-centered-container">
+        <div class="row">
+          <!-- -------------- ICONS + DESCRIPTIONS ------------- -->
+
+          <div class="col-12 col-xl-3 text-center mt-3 mt-md-5">
+            <img
+              src="../[1] Bootstrap Website Layout/img/icon-1.png"
+              alt="icon1"
+            />
+            <h1 class="description-title h4 mt-2 mt-md-4 font-weight-bold">
+              Purpose
+            </h1>
+            <p class="description-paragraph mt-2 text-muted">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium magnam natus rem delectus earum iure facere, cumque
+              repudiandae animi aliquam.
+            </p>
+          </div>
+
+          <div class="col-12 col-xl-3 text-center mt-3 mt-md-5">
+            <img
+              src="../[1] Bootstrap Website Layout/img/icon-2.png"
+              alt="icon1"
+            />
+            <h1 class="description-title h4 mt-2 mt-md-4 font-weight-bold">
+              Quality
+            </h1>
+            <p class="description-paragraph mt-2 text-muted">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem autem ducimus illum fugit quas rerum ipsam, maxime consequatur numquam beatae.
+            </p>
+          </div>
+
+          <div class="col-12 col-xl-3 text-center mt-3 mt-md-5">
+            <img
+              src="../[1] Bootstrap Website Layout/img/icon-3.png"
+              alt="icon1"
+            />
+
+            <h1 class="description-title h4 mt-2 mt-md-4 font-weight-bold">
+              Function
+            </h1>
+            <p class="description-paragraph mt-2 text-muted">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
+              labore iusto officia repellendus, autem ab deserunt veniam,
+              voluptatum perferendis facilis quos inventore!
+            </p>
+          </div>
+
+          <div class="col-12 col-xl-3 text-center mt-3 mt-md-5">
+            <img
+              src="../[1] Bootstrap Website Layout/img/icon-4.png"
+              alt="icon1"
+            />
+            <h1 class="description-title h4 mt-2 mt-md-4 font-weight-bold">
+              Elegant
+            </h1>
+            <p class="description-paragraph mt-2 text-muted">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem commodi maxime eos recusandae facere velit distinctio error animi!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- -------------- RECENT WORK ------------------->
+
+    <section id="recent-work">
+      <div class="container medium-centered-container mt-5">
+        <h5 class="recent-work">RECENT WORK</h5>
+        <hr class="line" />
+        <div class="row">
+          <!--------- IMAGES & DESCRIPTIONS ---------->
+
+          <div class="col-12 col-md-6 col-xl-3 mt-4">
+            <img
+              class="recent-work-img"
+              src="../[1] Bootstrap Website Layout/img/bike-400x340.jpg"
+              alt="bike"
+            />
+            <h5 class="mt-2 description-title">Green Bike</h5>
+            <p class="text-muted description-text">Beautiful, Travel</p>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-3 mt-md-4 mt-xl-4">
+            <img
+              class="recent-work-img"
+              src="../[1] Bootstrap Website Layout/img/surf-400x340.jpg"
+              alt="bike"
+            />
+            <h5 class="mt-2 description-title">Salt Of The Earth</h5>
+            <p class="text-muted description-text">Beautiful, Travel</p>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-3 mt-xl-4">
+            <img
+              class="recent-work-img"
+              src="../[1] Bootstrap Website Layout/img/hills-400x340.jpg"
+              alt="bike"
+            />
+            <h5 class="mt-2 description-title">Mountain High</h4>
+            <p class="text-muted description-text">Travel</p>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-3 mt-xl-4">
+            <img
+              class="recent-work-img"
+              src="../[1] Bootstrap Website Layout/img/path-400x340.jpg"
+              alt="bike"
+            />
+            <h5 class="mt-2 description-title">When A Tree Falls</h5>
+            <p class="text-muted description-text">Beautiful</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- -------------- FROM THE BLOG ------------------->
+
+    <section id="from-the-blog">
+        <div class="container medium-centered-container">
+            <h5 class="recent-work mt-4">FROM THE BLOG</h5>
+            <hr class="line" />
+
+            <div class="row">
+                <div class="col-12 col-xl-4 mt-4">
+                    <img class="ftb-img" src="../[1] Bootstrap Website Layout/img/cow-640x340.jpg" alt="cow">
+                    <h5 class="mt-2">How Now</h5>
+                    <p class="text-muted">Posted on October 28, 2020</p>
+                    <p class="text-muted ftb-img-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ab? Quaerat quod consectetur reprehenderit vitae.</p>
+                </div>
+                
+                <div class="col-12 col-xl-4 mt-1 mt-xl-4">
+                    <img class="ftb-img" src="../[1] Bootstrap Website Layout/img/sunrise-640x340.jpg" alt="cow">
+                    <h5 class="mt-2">Adrift by Simon Christen</h5>
+                    <p class="text-muted">Posted on September 29, 2020</p>
+                    <p class="text-muted ftb-img-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias blanditiis, magni voluptatibus officia sequi unde?</p>
+                </div> 
+                
+                <div class="col-12 col-xl-4 mt-1 mb-4 mt-xl-4 mb-xl-5">
+                    <img class="ftb-img" src="../[1] Bootstrap Website Layout/img/grass-640x340.jpg" alt="cow">
+                    <h5 class="mt-2">A Walk in The Park</h5>
+                    <p class="text-muted">Posted on August 10, 2020</p>
+                    <p class="text-muted ftb-img-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+    </section>
+
+    <section id="pre-footer">
+        <div class="container medium-centered-container">
+            <div class="row">
+                <div class="col-12 col-xl-4">
+                    <h3 class="mt-5 footer-title text-light">My Website</h3>
+                    <p class="mt-4 footer-description footer-text-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quo ipsa laborum nemo ex totam omnis, expedita rerum dignissimos corporis minima, a dolorem accusantium, voluptas similique repudiandae molestiae magnam eius!</p>
+                </div>
+                
+                <div class="col-12 col-xl-4 footer-text-color">
+                    <h3 class="mt-5 footer-title text-light">Recent Posts</h3>
+                    <hr>
+                    <p class="recent-posts-child">How Now</p> <hr>
+                    <p class="recent-posts-child">Adrift by Simon Christen</p> <hr>
+                    <p class="recent-posts-child"> A Walk in The Park</p> <hr>
+                    <p class="recent-posts-child">Time to Think</p> <hr>
+                    <p class="recent-posts-child">Field of Dreams</p>
+                </div>
+                
+                <div class="col-12 col-xl-4 footer-text-color">
+                    <h3 class="mt-5 footer-title text-light">Recent Work</h3>
+                    <hr>
+                    <p class="recent-posts-child">Beautiful</p> <hr>
+                    <p class="recent-posts-child">Travel</p> <hr>
+                    <p class="recent-posts-child">Surreal</p> <hr>
+                    <p class="recent-posts-child">Thoughts</p> <hr>
+                    <p class="recent-posts-child mb-2">Unique</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+       <p class="footer-text">© 2023 | Cazac Andrei | Link Academy Romania</p>
+    </footer>
+  </body>
+</html>

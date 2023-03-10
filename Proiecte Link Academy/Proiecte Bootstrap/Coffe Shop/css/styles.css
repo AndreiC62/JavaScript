@@ -1,0 +1,168 @@
+:root {
+  --grey-color: rgb(239, 239, 239);
+}
+
+/* HERO SECTION */
+
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+#hero-section {
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 50vw rgba(0, 0, 0, 0.779);
+}
+
+/* #hero-section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #3d302f79;
+  height: 100vh;
+} */
+
+#hero-logo {
+  width: 256px;
+}
+
+.hamburger {
+  text-align: right;
+}
+
+.display-2 {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+#arrow-down img {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: block;
+  width: 36px;
+}
+
+/* ----------------- HEADER -----------------*/
+
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#header-logo {
+  width: 42px;
+}
+
+header a {
+  color: white;
+  margin-left: 36px;
+}
+
+header a:hover {
+  color: white;
+}
+
+header a:visited {
+  color: white;
+}
+
+/* .display-2 {
+  text-shadow: 10px 2px 2px 15px white;
+} */
+
+.display-2 {
+  color: rgb(239, 239, 239);
+}
+
+.leadd {
+  font-family: "Luxurious Script", sans-serif;
+  font-size: 42px;
+  margin-top: -15px;
+  color: var(--grey-color);
+}
+
+.icon img {
+  width: 180px;
+}
+
+.icon p {
+  font-size: 24px;
+}
+
+.icon {
+  font-family: "Oswald", sans-serif;
+}
+
+#intro-section {
+  background-color: #ebe1c2;
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}
+
+#about-bg-1 {
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  min-height: 480px;
+}
+
+#about-bg-2 {
+  background-image: url(../img/coffee.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  min-height: 480px;
+}
+
+#black-row {
+  background-color: black;
+}
+
+#contact-info-bg-1 {
+  background: linear-gradient(
+      to right,
+      rgba(12, 12, 12, 0.718),
+      rgba(0, 0, 0, 0.64)
+    ),
+    url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  /* min-height: 480px; */
+}
+
+.images img {
+  width: 320px;
+}
+
+#contact-info-bg-2 {
+  background-color: rgba(0, 0, 0, 0.61);
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.938);
+}
+
+@media screen and (max-width: 760px) {
+  #text-align {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  footer {
+    text-align: center;
+  }
+}

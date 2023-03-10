@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+/* ------------ GLOBAL ------------ */
+.text-right {
+  text-align: right;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  cursor: pointer;
+}
+
+/* --------------- NAV BAR --------------- */
+
+#navigation-bar {
+  font-family: Oswald, sans-serif;
+}
+
+.my-website {
+  padding-top: 8px;
+}
+
+#hamburger img {
+  height: 20px;
+}
+
+#hamburger::after {
+  content: "Menu";
+  color: black;
+  font-size: 18px;
+  margin-left: 6px;
+  color: rgb(46, 46, 46);
+}
+
+.hamburger-menu {
+  margin-top: -3px;
+}
+
+/* --------------- HERO SECTION --------------- */
+
+#hero-section {
+  background: url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 30vw;
+  width: 100%;
+}
+
+body {
+  position: relative;
+}
+
+.hero-paragraph {
+  background-color: rgb(13, 177, 117);
+  padding: 10px;
+  display: inline-block;
+  font-size: 3vw;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --------------- DESCRIPTION SECTION --------------- */
+
+.description-paragraph {
+  font-size: 14px;
+}
+
+/* --------------- RECENT WORK --------------- */
+
+.recent-work {
+  font-size: 16px;
+}
+
+hr {
+  margin-top: -5px;
+  box-shadow: 1px 1px 6px black;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+.recent-work-img {
+  width: 100%;
+}
+
+/* --------------- FROM THE BLOG --------------- */
+
+.ftb-img {
+  width: 100%;
+}
+
+.ftb-img-description {
+  font-size: 14px;
+  margin-top: -10px;
+}
+
+/* --------------- PAGE PRE FOOTER --------------- */
+
+#pre-footer {
+  background-color: rgb(19, 19, 19);
+}
+
+.footer-description {
+  font-size: 12px;
+}
+
+.footer-text-color {
+  color: rgb(182, 182, 182);
+}
+
+.recent-posts-child {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+/* --------------- FOOTER --------------- */
+
+footer {
+  background-color: black;
+  text-align: center;
+  color: rgb(143, 143, 143);
+  width: 100%;
+  height: 50px;
+}
+
+.footer-text {
+  font-size: 14px;
+  padding-top: 15px;
+}
+
+/* --------------- MEDIA QUERIES --------------- */
+
+@media screen and (min-width: 768px) {
+  .hero-paragraph {
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  .medium-centered-container {
+    width: 70%;
+  }
+
+  .description-title {
+    font-size: 16px;
+  }
+
+  .description-text {
+    font-size: 12px;
+    margin-top: -4px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-links {
+    font-size: 20px;
+  }
+}
