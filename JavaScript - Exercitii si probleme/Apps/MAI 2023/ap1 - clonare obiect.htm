@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const user = {
+        fname: "Ion",
+        lname: "Popescu",
+        adresa: {
+          judet: "SV",
+          oras: "Campulung",
+        },
+      };
+
+      const copy1 = { ...user }; // creaza o copie separata - nu e prin referinta
+
+      // PENTRU A COPIA / CLONA CORECT UN OBIECT
+
+      let copy2 = JSON.parse(JSON.stringify(user)); // <<< --------------------------------
+
+      copy2.fname = "Andrei";
+      copy2.adresa.oras = "Cluj";
+      console.log(copy2);
+      console.log(user);
+    </script>
+  </body>
+</html>

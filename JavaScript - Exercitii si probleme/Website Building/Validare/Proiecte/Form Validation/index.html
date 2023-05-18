@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 2 - Website Building</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
+    "
+    />
+  </head>
+
+  <body>
+    <div id="login-container">
+      <form>
+        <div class="form-element">
+          <label for="username">Username:</label>
+          <input id="username" type="text" />
+          <i class="fa fa-solid fa-x"></i>
+          <i class="fa fa-solid fa-check"></i>
+        </div>
+
+        <div class="form-element">
+          <label for="password">Password:</label>
+          <input id="password" type="password" />
+          <i class="fa fa-pa fa-solid fa-x"></i>
+          <i class="fa fa-p fa-solid fa-check"></i>
+        </div>
+
+        <input type="submit" value="Login" />
+      </form>
+      <p id="userError"></p>
+      <p id="passError"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class User {
+        parola = "12345";
+        constructor(id, nume, email) {
+          this.id = id;
+          this.nume = nume;
+          this.email = email;
+        }
+        salut() {
+          console.log(`Salut, numele meu este ${this.nume}.`);
+        }
+        info() {
+          this.salut();
+          console.log(`Adresa de mail este ${this.email}.`);
+        }
+      }
+
+      const user1 = new User(1, "Cazac Andrei", "ac@yahoo.com");
+
+      console.log(user1);
+      console.log(typeof user1);
+      user1.info();
+      user1.parola = "1934852394";
+      console.log(user1.parola);
+
+      console.log(User.prototype);
+      console.log(Object.prototype);
+    </script>
+  </body>
+</html>

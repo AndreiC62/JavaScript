@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Person {
+        constructor(nume, varsta) {
+          this.nume = nume;
+          this.varsta = varsta;
+        }
+        descriere() {
+          return `${this.nume} are ${this.varsta} ani.`;
+        }
+      }
+
+      let Dan = new Person("Dan", 19);
+      let Ion = new Person("Ion", 30);
+
+      console.log(Dan.descriere());
+      console.log(Ion.descriere());
+
+      console.log(Ion);
+    </script>
+  </body>
+</html>

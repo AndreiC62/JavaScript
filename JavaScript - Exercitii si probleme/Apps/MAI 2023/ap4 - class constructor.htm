@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Vehicle {
+        constructor(tip, culoare, model, an) {
+          this.tip = tip;
+          this.culoare = culoare;
+          this.model = model;
+          this.an = an;
+        }
+        info() {
+          return `TIP: ${this.tip} \n CULOARE: ${this.culoare} \n MODEL: ${this.model}`;
+        }
+        start() {
+          return `Masina ${this.model} din anul ${this.an} a pornit.`;
+        }
+        stop() {
+          return `STOP button pressed.`;
+        }
+        pickup() {
+          return `Passager picked up`;
+        }
+      }
+
+      let car1 = new Vehicle("masina", "rosu", "Porsche", 2015);
+      console.log(car1.info());
+      console.log(car1.start());
+    </script>
+  </body>
+</html>

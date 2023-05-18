@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REGEX</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+
+    <script>
+      // PATTERN
+
+      //   let sursa = "12, 34, 56, 45";
+      //   let pattern = /,\' \'*/;
+      //   let result = sursa.split(pattern);
+      //   console.log(result);
+
+      //   REGEX
+
+      let text =
+        "JavaScript este un limbaj care nu are nicio legatura cu Java / Java / Java";
+      let pattern = /Java/g;
+
+      // /g = global
+      // /gi = global, insensitive
+      // /i = il gaseste doar pe primul, insensitive
+      // /m = multiline
+
+      let result = text.match(pattern);
+
+      document.getElementById("demo").innerHTML = result;
+    </script>
+  </body>
+</html>
