@@ -8,12 +8,15 @@
   </head>
   <body>
     <script>
-      let x = [1, 2, 3, 4, 5];
-
-      x.forEach((er) => {
-        if (e < 3 || e === 3) return;
-        console.log(e);
-      });
+      let test = fetch(
+        "https://v-dresevic.github.io/Advanced-JavaScript-Programming/data/students.txt"
+      )
+        .then((res) => {
+          return res.text();
+        })
+        .then((data) => {
+          let splitted = data.split("\n");
+        });
     </script>
   </body>
 </html>
