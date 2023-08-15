@@ -1,0 +1,33 @@
+.dataRow {
+  margin-left: 12px;
+}
+
+.data-row {
+  display: flex;
+  height: 35px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.deleteBtn {
+  font-size: 15px;
+  margin-right: 10px;
+  border-radius: 50px;
+  color: rgb(214, 0, 0);
+  cursor: pointer;
+  margin-top: 8px;
+  border: 1px solid red;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+  .dataRow {
+    font-size: 14px;
+  }
+  .deleteBtn {
+    font-size: 12px;
+  }
+}

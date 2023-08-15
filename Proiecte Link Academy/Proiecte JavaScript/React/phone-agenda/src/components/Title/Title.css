@@ -1,0 +1,67 @@
+header {
+  text-align: center;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  border-bottom: 3px solid black;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+header::after {
+  content: "OK";
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 12px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 2px;
+  color: rgb(5, 5, 194);
+  font-weight: bold;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+header::before {
+  content: "Cancel";
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  font-size: 12px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 2px;
+  color: rgb(5, 5, 194);
+  font-weight: bold;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.speaker {
+  width: 150px;
+  height: 21px;
+  background-color: black;
+  position: absolute;
+  top: -1px;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  opacity: 0.94;
+}
+
+.camera {
+  width: 60px;
+  height: 10px;
+  background-color: black;
+  position: absolute;
+  top: 4px;
+  border-radius: 20px;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+  header {
+    font-size: 12px;
+  }
+}
