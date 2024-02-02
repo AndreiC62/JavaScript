@@ -1,0 +1,39 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #fefae0;
+  color: #fff;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  margin-left: 20px;
+}
+
+.navbar-center {
+  display: flex;
+}
+
+.navbar-center a {
+  text-decoration: none;
+  color: #000000;
+  margin: 0 10px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.language-icon {
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
