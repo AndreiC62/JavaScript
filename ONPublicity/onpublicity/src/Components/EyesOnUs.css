@@ -1,0 +1,59 @@
+:root {
+  --verde: #606c38;
+  --bej: #fefae0;
+}
+
+.eyes-container {
+  background-color: #fefae0;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0; /* Adăugăm spațiu între conținut și marginea containerului */
+}
+
+.eyes-content {
+  background-color: #fefae0;
+  width: 85%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.eyes-icon-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.eyes-icon-text .icon {
+  margin-right: 12px;
+  color: var(--verde);
+  font-size: 22px;
+}
+
+.eyes-icon-text a {
+  color: #606c38;
+  text-decoration: none;
+}
+
+.eyes-title {
+  margin-bottom: 12px; /* Adăugăm 12px de distanță între titlu și paragraf */
+}
+
+.eyes-paragraph {
+  text-align: center; /* Centrăm textul paragrafului */
+}
+
+.eyes-icons {
+  margin-top: 40px;
+}
+
+.eyesonus__social_media_icons {
+  margin-right: 28px;
+  font-size: 42px;
+  color: var(--verde);
+  margin-bottom: 20px;
+}
+
+.eyesonus__last1_icon {
+  margin-right: 0;
+}

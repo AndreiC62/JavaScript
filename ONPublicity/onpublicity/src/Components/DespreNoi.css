@@ -1,0 +1,153 @@
+:root {
+  --verde: #606c38;
+  --bej: #fefae0;
+}
+
+/* ----------------------------------------- VARIANTA DESKTOP ----------------------------------  */
+/* ----------------------------------------- VARIANTA DESKTOP ----------------------------------  */
+/* ----------------------------------------- VARIANTA DESKTOP ----------------------------------  */
+/* ----------------------------------------- VARIANTA DESKTOP ----------------------------------  */
+
+@media only screen and (min-width: 769px) {
+  .background-container {
+    width: 100%;
+    background-color: var(--bej);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .offer-container {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .offer-image-container {
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  .offer-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .offer-content {
+    flex: 2;
+    text-align: left;
+  }
+
+  .offer-content h1 {
+    font-size: 32px;
+    padding-bottom: 10px;
+    color: var(--verde);
+  }
+
+  .offer-content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: var(--verde);
+    width: 100%;
+  }
+
+  .offer-button {
+    background-color: #bc6c25;
+    padding: 10px 26px;
+    border: none;
+    color: #fff;
+    font-family: "Poppins";
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+  }
+
+  .offer-button:hover {
+    background-color: #2980b9;
+  }
+}
+
+:root {
+  --verde: #606c38;
+  --bej: #fefae0;
+}
+
+/* ----------------------------------------- VARIANTA MOBILA ----------------------------------  */
+/* ----------------------------------------- VARIANTA MOBILA ----------------------------------  */
+/* ----------------------------------------- VARIANTA MOBILA ----------------------------------  */
+/* ----------------------------------------- VARIANTA MOBILA ----------------------------------  */
+
+@media only screen and (max-width: 768px) {
+  .offer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 20px; */
+    padding-top: 20px;
+    background-color: var(--bej);
+    /* height: 1300px; */
+    padding-bottom: 50px;
+  }
+
+  .offer-image-container {
+    padding-top: 50px;
+    width: 85%;
+    height: auto;
+    max-width: 800px;
+    overflow: hidden;
+  }
+
+  .offer-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .offer-content {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .offer-content h1 {
+    font-size: 24px;
+    padding: 18px;
+    margin-bottom: 10px;
+    font-family: "Poppins";
+    color: var(--verde);
+  }
+
+  .offer-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: var(--verde);
+    font-family: "Poppins";
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 25px;
+  }
+
+  .offer-button {
+    background-color: #bc6c25;
+    padding: 10px;
+    padding-left: 26px;
+    padding-right: 26px;
+    border: none;
+    color: #fff;
+    font-family: "Poppins";
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 12px;
+    transition: background-color 0.3s ease;
+  }
+
+  .offer-button:hover {
+    background-color: #2980b9;
+  }
+}

@@ -1,0 +1,188 @@
+:root {
+  --verde: #606c38;
+  --bej: #fefae0;
+}
+
+/* ----------------------------------------- VARIANTA MOBILA ----------------------------------  */
+/* ----------------------------------------- VARIANTA MOBILA ----------------------------------  */
+/* ----------------------------------------- VARIANTA MOBILA ----------------------------------  */
+/* ----------------------------------------- VARIANTA MOBILA ----------------------------------  */
+
+@media only screen and (max-width: 768px) {
+  .mobile-container {
+    width: 100%;
+    white-space: nowrap;
+    /* height: 1300px; */
+    background-color: var(--verde);
+    overflow-x: auto;
+  }
+
+  .titluCard {
+    background-color: var(--verde);
+    color: var(--bej);
+    margin: 0;
+    font-size: 26px;
+    /* letter-spacing: 1px; */
+    padding-bottom: 15px;
+  }
+
+  .card-container {
+    display: inline-flex;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .card {
+    width: 250px;
+    height: 300px;
+    background-color: var(--bej);
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .card .button {
+    position: absolute;
+    bottom: 10px;
+    margin-left: -6vh;
+  }
+
+  .card h1 {
+    color: var(--verde);
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .card p {
+    color: var(--verde);
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1,
+  p {
+    margin: 0;
+  }
+
+  h1 {
+    font-family: "Poppins";
+    margin-bottom: 20px;
+    color: var(--bej);
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .button {
+    background-color: #bc6c25;
+    padding: 6px;
+    padding-left: 26px;
+    padding-right: 26px;
+    border: none;
+    color: #fff;
+    font-family: "Poppins";
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 12px;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #2980b9;
+  }
+
+  .card-content {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+/* ----------------------------------------- VARIANTA DESKTOP ----------------------------------  */
+/* ----------------------------------------- VARIANTA DESKTOP ----------------------------------  */
+/* ----------------------------------------- VARIANTA DESKTOP ----------------------------------  */
+/* ----------------------------------------- VARIANTA DESKTOP ----------------------------------  */
+
+@media only screen and (min-width: 768px) {
+  .mobile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--verde);
+    overflow: hidden;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Două coloane egale */
+    gap: 30px; /* Spațiere între carduri */
+    padding: 20px; /* Spațiere între carduri și marginea containerului */
+    max-width: 900px; /* Limităm lățimea containerului pentru a menține o dimensiune controlată */
+    width: 75%; /* Asigurăm că containerul ocupă întreaga lățime disponibilă */
+    margin: 0 auto; /* Centrare */
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    background-color: var(--bej);
+    border-radius: 20px;
+    padding: 20px; /* Spațiere între conținutul cardului și marginea acestuia */
+    box-sizing: border-box; /* Asigurăm că padding-ul nu crește dimensiunea totală a cardului */
+    text-align: center; /* Centrare text în carduri */
+  }
+
+  .card h1 {
+    color: var(--verde);
+    font-size: 12px;
+    margin-top: 15px;
+    margin-bottom: 10px; /* Spațiere între titlu și conținut */
+  }
+
+  .card p {
+    color: var(--verde);
+    font-size: 12px;
+    margin-top: 16px; /* Spațiere între conținut și buton */
+  }
+
+  .card button {
+    background-color: #bc6c25;
+    padding: 4px 25px; /* Dimensiuni buton */
+    border: none;
+    color: #fff;
+    font-family: "Poppins";
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+  }
+
+  .card button:hover {
+    background-color: #2980b9;
+  }
+
+  .titluCard {
+    background-color: var(--verde);
+    margin: 0;
+    color: var(--bej);
+    font-size: 48px;
+  }
+
+  .hr-line {
+    background-color: #bc6c25;
+    width: 80%;
+    /* height: 1px; */
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid #bc6c25;
+  }
+}

@@ -1,0 +1,35 @@
+.footer-container {
+  background-color: #606c38; /* Se aplică culoarea de fundal */
+  width: 100%; /* Face containerul să fie la lățimea totală a ecranului */
+  display: flex; /* Utilizăm flexbox pentru a centra și limita lățimea */
+  justify-content: center; /* Centrăm conținutul */
+}
+
+.footer-content {
+  width: 85%; /* Limităm lățimea conținutului la 85% */
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.footer-logo {
+  width: 200px;
+  color: white;
+}
+
+h2 {
+  margin: 20px 0;
+}
+
+.footer-line {
+  margin-top: 25px;
+  border: 1px solid #b7c197;
+}
+
+p {
+  margin: 25px 0;
+}
+
+.drepturi {
+  color: #b7c197;
+}

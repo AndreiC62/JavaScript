@@ -1,0 +1,8 @@
+.fade-in {
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out; /* Ajustați durata și curba de tranziție după nevoie */
+}
+
+.fade-in.visible {
+  opacity: 1;
+}

@@ -1,0 +1,196 @@
+:root {
+  --verde: #606c38;
+  --bej: #fefae0;
+}
+
+/* ----------------------------------------- VARIANTA MOBILA ----------------------------------  */
+/* ----------------------------------------- VARIANTA MOBILA ----------------------------------  */
+/* ----------------------------------------- VARIANTA MOBILA ----------------------------------  */
+/* ----------------------------------------- VARIANTA MOBILA ----------------------------------  */
+
+@media only screen and (max-width: 768px) {
+  .why-us-container {
+    width: 100%;
+    background-color: var(--bej);
+    padding-bottom: 35px;
+  }
+
+  .why-us-outer-container {
+    background-color: var(--bej);
+  }
+
+  .why-us-title {
+    background-color: var(bej);
+    color: var(--verde);
+    margin: 0;
+    font-size: 26px;
+    padding-bottom: 15px;
+    font-family: "Poppins";
+  }
+
+  .why-us-mobile-container {
+    width: 100%;
+    white-space: nowrap;
+    background-color: var(--bej);
+    overflow-x: auto;
+  }
+
+  .why-us-card-container {
+    display: inline-flex;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .why-us-card {
+    width: 250px;
+    height: 300px;
+    background-color: var(--verde);
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    color: var(--bej);
+    text-align: center;
+    padding: 15px;
+  }
+
+  .why-us-card .why-us-button {
+    position: absolute;
+    bottom: 10px;
+    margin-left: -9vh;
+  }
+
+  .why-us-card h1 {
+    color: var(--bej);
+    font-size: 17px;
+    margin-top: 15px;
+  }
+
+  .why-us-card p {
+    color: var(--bej);
+    font-size: 16px;
+    margin-top: 35px;
+  }
+
+  .why-us-card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1,
+  p {
+    margin: 0;
+  }
+
+  h1 {
+    font-family: "Poppins";
+    margin-bottom: 20px;
+    color: var(--bej);
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .why-us-button {
+    background-color: #bc6c25;
+    padding: 6px;
+    padding-left: 26px;
+    padding-right: 26px;
+    border: none;
+    color: #fff;
+    font-family: "Poppins";
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 12px;
+    transition: background-color 0.3s ease;
+  }
+
+  .why-us-button:hover {
+    background-color: #2980b9;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .why-us-card-content {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  }
+}
+
+/* ----------------------------------------- VARIANTA DESKTOP ----------------------------------  */
+/* ----------------------------------------- VARIANTA DESKTOP ----------------------------------  */
+/* ----------------------------------------- VARIANTA DESKTOP ----------------------------------  */
+/* ----------------------------------------- VARIANTA DESKTOP ----------------------------------  */
+
+@media only screen and (min-width: 768px) {
+  .why-us-container {
+    width: 100%;
+    background-color: var(--bej);
+    padding-top: 50px;
+  }
+
+  .why-us-outer-container {
+    text-align: center;
+  }
+
+  .why-us-title {
+    font-size: 38px;
+    padding-bottom: 24px;
+    color: var(--verde);
+    margin: 0;
+  }
+
+  .why-us-mobile-container {
+    width: 100%;
+    background-color: var(--bej);
+    padding: 20px 0;
+  }
+
+  .why-us-card-container {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+  }
+
+  .why-us-card {
+    width: 23%;
+    background-color: var(--verde);
+    border-radius: 8px;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .why-us-card h1 {
+    color: var(--bej);
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  .why-us-card p {
+    color: var(--bej);
+    font-size: 12px;
+    margin-top: 25px;
+  }
+
+  .why-us-card .why-us-button {
+    background-color: #bc6c25;
+    padding: 4px 25px;
+    border: none;
+    color: #fff;
+    font-family: "Poppins";
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+  }
+
+  .why-us-card .why-us-button:hover {
+    background-color: #2980b9;
+  }
+}

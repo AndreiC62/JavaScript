@@ -1,0 +1,117 @@
+:root {
+  --verde: #606c38;
+  --bej: #fefae0;
+}
+
+.background-container {
+  background-color: var(--bej);
+  /* height: 1000px; */
+}
+
+.form-container {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.form-title,
+.form-content {
+  color: var(--verde);
+}
+
+.form-title {
+  font-size: 28px;
+}
+
+.form-content {
+  background-color: var(--verde);
+  color: var(--bej);
+  padding: 20px;
+  border-radius: 20px;
+  /* margin: 0 auto; */
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.paragraf_formular {
+  background-color: var(--bej);
+  color: var(--verde);
+}
+
+.form-label {
+  display: block;
+  color: var(--bej);
+}
+
+.form-input {
+  width: calc(
+    100% - 30px
+  ); /* 10px pentru padding-right și 20px pentru padding-left */
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-radius: 5px;
+  border: 1px solid var(--bej);
+  background-color: var(--verde);
+  color: var(--bej);
+  border-radius: 12px;
+  padding-left: 20px;
+}
+
+.form-button {
+  background-color: #bc6c25;
+  padding: 11px 26px;
+  border: none;
+  color: #fff;
+  width: 100%;
+  font-family: "Poppins";
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 12px;
+  transition: background-color 0.3s ease;
+}
+
+::placeholder {
+  color: #a1b176;
+  /* padding-left: 20px; */
+  font-family: "Poppins";
+  font-size: 14px;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.form-agreement {
+  color: var(--bej);
+  margin-top: 20px;
+}
+
+.form-checkbox {
+  margin-right: 10px;
+}
+
+.acord {
+  color: #a1b176;
+  font-family: "Arial";
+  font-size: 14px;
+}
+
+input[type="checkbox"] {
+  accent-color: rgb(71, 93, 37);
+  scale: 1.4;
+  /* margin: 0px; */
+  margin-top: -20px;
+}
+
+.form-agreement {
+  display: flex;
+}
+
+.acord {
+  text-align: left;
+  margin-left: 8px;
+}
