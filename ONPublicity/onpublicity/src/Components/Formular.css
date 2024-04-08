@@ -3,115 +3,340 @@
   --bej: #fefae0;
 }
 
-.background-container {
+@font-face {
+  font-family: "Parallone";
+  src: url(../parallone/Parallone-Regular.otf);
+}
+
+@font-face {
+  font-family: "Parallone Thin";
+  src: url(../parallone/Parallone-Thin.otf);
+}
+
+@media only screen and (max-width: 769px) {
+  .background-container {
+    background-color: var(--bej);
+  }
+
+  .subFormular_icon_info {
+    display: none;
+  }
+
+  .subFormular_icon_info_showOnMobile {
+    display: block;
+    padding-top: 35px;
+  }
+
+  .form-container {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .form-title,
+  .form-content {
+    color: var(--verde);
+  }
+
+  .text_icon_date_contact {
+    font-family: "Parallone Thin";
+  }
+
+  .form-title {
+    font-size: 28px;
+    padding-top: 15px;
+
+    font-family: "Parallone";
+    font-weight: 400;
+    line-height: 36px;
+  }
+
+  .form_content {
+    background-color: var(--verde);
+    color: var(--bej);
+    padding: 20px;
+    border-radius: 20px;
+    /* margin: 0 auto; */
+  }
+
+  .form-field {
+    margin-bottom: 20px;
+  }
+
+  .paragraf_formular {
+    background-color: var(--bej);
+    color: var(--verde);
+  }
+
+  .form-label {
+    display: block;
+    color: var(--bej);
+  }
+
+  .form-input {
+    width: calc(100% - 30px);
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-radius: 5px;
+    border: 1px solid var(--bej);
+    background-color: var(--verde);
+    color: var(--bej);
+    border-radius: 12px;
+    padding-left: 20px;
+
+    font-family: "Parallone Thin";
+    font-weight: 100;
+  }
+
+  .form-button {
+    background-color: #bc6c25;
+    padding: 11px 26px;
+    border: none;
+    color: #fff;
+    width: 100%;
+    font-family: "Poppins";
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 12px;
+    transition: background-color 0.3s ease;
+  }
+
+  ::placeholder {
+    color: #a1b176;
+    /* padding-left: 20px; */
+    font-family: "Parallone Thin";
+    font-size: 15px;
+  }
+
+  .form-success-message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--bej);
+    /* border: 1px solid #ccc; */
+    border-radius: 30px;
+    color: var(--verde);
+  }
+
+  input:focus::placeholder {
+    color: transparent;
+  }
+
+  .form-agreement {
+    color: var(--bej);
+    margin-top: 20px;
+  }
+
+  .form-checkbox {
+    margin-right: 10px;
+  }
+
+  .acord {
+    color: #a1b176;
+    font-family: "Arial";
+    font-size: 14px;
+  }
+
+  input[type="checkbox"] {
+    accent-color: rgb(71, 93, 37);
+    scale: 1.4;
+    /* margin: 0px; */
+    margin-top: -20px;
+  }
+
+  .form-agreement {
+    display: flex;
+  }
+
+  .acord {
+    text-align: left;
+    margin-left: 8px;
+  }
+}
+
+.form_color_container {
   background-color: var(--bej);
-  /* height: 1000px; */
 }
 
-.form-container {
-  width: 85%;
-  margin: 0 auto;
-  text-align: center;
-  padding: 20px;
-}
+@media only screen and (min-width: 770px) {
+  .form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    background-color: var(--bej);
+    width: 85%;
+    margin: 0 auto;
+    vertical-align: middle;
 
-.form-title,
-.form-content {
-  color: var(--verde);
-}
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 
-.form-title {
-  font-size: 28px;
-}
+  .form-content {
+    width: 40%;
+    /* padding: 20px; */
+    border-radius: 20px;
+    margin-bottom: 0;
+  }
 
-.form-content {
-  background-color: var(--verde);
-  color: var(--bej);
-  padding: 20px;
-  border-radius: 20px;
-  /* margin: 0 auto; */
-}
+  .form-title {
+    text-align: left;
+  }
 
-.form-field {
-  margin-bottom: 20px;
-}
+  .form_color_container {
+    background-color: var(--bej);
+  }
 
-.paragraf_formular {
-  background-color: var(--bej);
-  color: var(--verde);
-}
+  .subFormular_icon_info_showOnMobile {
+    display: none;
+  }
 
-.form-label {
-  display: block;
-  color: var(--bej);
-}
+  .column-left {
+    width: 55%; /* Lățimea primei coloane */
+    margin: 0 auto;
+    vertical-align: middle;
+    /* text-align: left; */
+    margin-left: 0;
+    margin-top: 0;
+  }
 
-.form-input {
-  width: calc(
-    100% - 30px
-  ); /* 10px pentru padding-right și 20px pentru padding-left */
-  padding-top: 14px;
-  padding-bottom: 14px;
-  border-radius: 5px;
-  border: 1px solid var(--bej);
-  background-color: var(--verde);
-  color: var(--bej);
-  border-radius: 12px;
-  padding-left: 20px;
-}
+  .form-title {
+    margin-top: 0;
+  }
 
-.form-button {
-  background-color: #bc6c25;
-  padding: 11px 26px;
-  border: none;
-  color: #fff;
-  width: 100%;
-  font-family: "Poppins";
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 12px;
-  transition: background-color 0.3s ease;
-}
+  .column-right {
+    width: 40%;
+  }
 
-::placeholder {
-  color: #a1b176;
-  /* padding-left: 20px; */
-  font-family: "Poppins";
-  font-size: 14px;
-}
+  .form-field {
+    margin-bottom: 20px; /* Adaugă margin-bottom pentru form-field */
+  }
 
-input:focus::placeholder {
-  color: transparent;
-}
+  .paragraf_formular {
+    background-color: var(--bej);
+    text-align: left;
+    color: var(--verde);
+    width: 100%;
+  }
 
-.form-agreement {
-  color: var(--bej);
-  margin-top: 20px;
-}
+  .subFormular_icon_info {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-.form-checkbox {
-  margin-right: 10px;
-}
+  .form-field {
+    margin-bottom: 20px;
+  }
 
-.acord {
-  color: #a1b176;
-  font-family: "Arial";
-  font-size: 14px;
-}
+  .form-label {
+    display: block;
+    color: var(--bej);
+  }
 
-input[type="checkbox"] {
-  accent-color: rgb(71, 93, 37);
-  scale: 1.4;
-  /* margin: 0px; */
-  margin-top: -20px;
-}
+  .form-input {
+    width: calc(
+      100% - 30px
+    ); /* 10px pentru padding-right și 20px pentru padding-left */
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-radius: 5px;
+    border: 1px solid var(--bej);
+    background-color: var(--verde);
+    color: var(--bej);
+    border-radius: 12px;
+    padding-left: 20px;
+  }
 
-.form-agreement {
-  display: flex;
-}
+  .form-button {
+    background-color: #bc6c25;
+    padding: 11px 26px;
+    border: none;
+    color: #fff;
+    width: 100%;
+    font-family: "Poppins";
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 12px;
+    transition: background-color 0.3s ease;
+  }
 
-.acord {
-  text-align: left;
-  margin-left: 8px;
+  ::placeholder {
+    color: #a1b176;
+    /* padding-left: 20px; */
+    font-family: "Poppins";
+    font-size: 14px;
+  }
+
+  input:focus::placeholder {
+    color: transparent;
+  }
+
+  .form-agreement {
+    color: var(--bej);
+    margin-top: 20px;
+  }
+
+  .form-success-message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--bej);
+    /* border: 1px solid #ccc; */
+    border-radius: 30px;
+    color: var(--verde);
+  }
+
+  .form-checkbox {
+    margin-right: 10px;
+  }
+
+  .acord {
+    color: #a1b176;
+    font-family: "Arial";
+    font-size: 14px;
+  }
+
+  input[type="checkbox"] {
+    accent-color: rgb(71, 93, 37);
+    scale: 1.4;
+    /* margin: 0px; */
+    margin-top: -20px;
+  }
+
+  .form-agreement {
+    display: flex;
+  }
+
+  .acord {
+    text-align: left;
+    margin-left: 8px;
+  }
+
+  .form-container {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    /* padding: 20px; */
+  }
+
+  .form-title,
+  .form-content {
+    color: var(--verde);
+  }
+
+  .form-title {
+    font-size: 28px;
+  }
+
+  .form_content {
+    background-color: var(--verde);
+    color: var(--bej);
+    padding: 20px;
+    border-radius: 20px;
+    /* margin: 0 auto; */
+  }
 }

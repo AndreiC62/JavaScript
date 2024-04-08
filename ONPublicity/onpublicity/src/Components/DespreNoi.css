@@ -3,6 +3,16 @@
   --bej: #fefae0;
 }
 
+@font-face {
+  font-family: "Parallone";
+  src: url(../parallone/Parallone-Regular.otf);
+}
+
+@font-face {
+  font-family: "Parallone Thin";
+  src: url(../parallone/Parallone-Thin.otf);
+}
+
 /* ----------------------------------------- VARIANTA DESKTOP ----------------------------------  */
 /* ----------------------------------------- VARIANTA DESKTOP ----------------------------------  */
 /* ----------------------------------------- VARIANTA DESKTOP ----------------------------------  */
@@ -19,11 +29,20 @@
     padding-bottom: 60px;
   }
 
+  .outer_despreNoi_color_container {
+    background-color: var(--bej);
+  }
+
   .offer-container {
     width: 85%;
     margin: 0 auto;
     display: flex;
     align-items: center;
+    gap: 40px;
+  }
+
+  a {
+    text-decoration: none;
   }
 
   .offer-image-container {
@@ -42,29 +61,31 @@
   }
 
   .offer-content h1 {
-    font-size: 32px;
+    font-size: 6.5vh;
     padding-bottom: 10px;
     color: var(--verde);
+
+    font-family: "Parallone";
+    font-weight: 400;
   }
 
   .offer-content p {
-    font-size: 14px;
-    margin-bottom: 20px;
+    font-size: 2.5vh;
+    margin-bottom: 7%;
     color: var(--verde);
     width: 100%;
   }
 
   .offer-button {
     background-color: #bc6c25;
-    padding: 10px 26px;
+    padding: 12px 28px;
     border: none;
     color: #fff;
     font-family: "Poppins";
     border-radius: 20px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 2.3vh;
     transition: background-color 0.3s ease;
-    margin-top: 15px;
   }
 
   .offer-button:hover {
@@ -95,6 +116,10 @@
     padding-bottom: 50px;
   }
 
+  .outer_despreNoi_color_container {
+    background-color: var(--bej);
+  }
+
   .offer-image-container {
     padding-top: 50px;
     width: 85%;
@@ -115,10 +140,11 @@
   }
 
   .offer-content h1 {
-    font-size: 24px;
+    font-size: 28px;
     padding: 18px;
     margin-bottom: 10px;
-    font-family: "Poppins";
+    font-family: "Parallone";
+    font-weight: 400;
     color: var(--verde);
   }
 
@@ -126,10 +152,12 @@
     font-size: 16px;
     margin-bottom: 20px;
     color: var(--verde);
-    font-family: "Poppins";
+    font-family: "Parallone Thin";
+    line-height: 21px;
+    font-weight: 100;
     width: 80%;
     margin: 0 auto;
-    padding-bottom: 25px;
+    padding-bottom: 50px;
   }
 
   .offer-button {
@@ -145,6 +173,7 @@
     font-size: 16px;
     margin-top: 12px;
     transition: background-color 0.3s ease;
+    text-decoration: none;
   }
 
   .offer-button:hover {

@@ -1,0 +1,12 @@
+@media only screen and (max-width: 768px) {
+  .animated-from-right-container {
+    opacity: 1;
+    transform: translateX(100%);
+    transition: opacity 1s ease, transform 0.5s ease;
+  }
+
+  .animated-from-right-container.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

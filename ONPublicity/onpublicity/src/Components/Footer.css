@@ -1,8 +1,25 @@
+@font-face {
+  font-family: "Parallone";
+  src: url(../parallone/Parallone-Regular.otf);
+}
+
+@font-face {
+  font-family: "Parallone Thin";
+  src: url(../parallone/Parallone-Thin.otf);
+}
+
 .footer-container {
-  background-color: #606c38; /* Se aplică culoarea de fundal */
-  width: 100%; /* Face containerul să fie la lățimea totală a ecranului */
-  display: flex; /* Utilizăm flexbox pentru a centra și limita lățimea */
-  justify-content: center; /* Centrăm conținutul */
+  background-color: #606c38;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  font-family: "Parallone Thin";
+  font-weight: 100;
+  color: #b7c197;
+  font-size: 16px;
 }
 
 .footer-content {
@@ -32,4 +49,6 @@ p {
 
 .drepturi {
   color: #b7c197;
+
+  font-family: "Parallone Thin";
 }

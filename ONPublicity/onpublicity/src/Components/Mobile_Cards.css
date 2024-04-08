@@ -3,6 +3,16 @@
   --bej: #fefae0;
 }
 
+@font-face {
+  font-family: "Parallone";
+  src: url(../parallone/Parallone-Regular.otf);
+}
+
+@font-face {
+  font-family: "Parallone Thin";
+  src: url(../parallone/Parallone-Thin.otf);
+}
+
 /* ----------------------------------------- VARIANTA MOBILA ----------------------------------  */
 /* ----------------------------------------- VARIANTA MOBILA ----------------------------------  */
 /* ----------------------------------------- VARIANTA MOBILA ----------------------------------  */
@@ -15,49 +25,72 @@
     /* height: 1300px; */
     background-color: var(--verde);
     overflow-x: auto;
+    padding-bottom: 25px;
   }
 
   .titluCard {
     background-color: var(--verde);
     color: var(--bej);
     margin: 0;
-    font-size: 26px;
+    font-size: 30px;
     /* letter-spacing: 1px; */
-    padding-bottom: 15px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    font-family: "Parallone";
+    font-weight: 400;
+    line-height: 36.4px;
+  }
+
+  .outer-container {
+    background-color: var(--verde);
   }
 
   .card-container {
     display: inline-flex;
     gap: 15px;
     padding: 15px;
+    padding-bottom: 20px;
   }
 
   .card {
     width: 250px;
-    height: 300px;
+    height: 250px;
     background-color: var(--bej);
     border-radius: 8px;
     box-sizing: border-box;
     overflow: hidden;
     position: relative;
+    color: var(--bej);
+    text-align: center;
+    padding: 15px;
   }
 
   .card .button {
     position: absolute;
     bottom: 10px;
-    margin-left: -6vh;
+
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .card h1 {
     color: var(--verde);
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 15px;
+    font-family: "Parallone";
+    font-weight: 400;
+    line-height: 27px;
   }
 
   .card p {
     color: var(--verde);
     font-size: 16px;
     margin-top: 15px;
+
+    font-family: "Parallone Thin";
+    font-weight: 100;
   }
 
   .card-content {
@@ -83,17 +116,18 @@
 
   .button {
     background-color: #bc6c25;
-    padding: 6px;
+    padding: 10px;
     padding-left: 26px;
     padding-right: 26px;
     border: none;
     color: #fff;
     font-family: "Poppins";
-    border-radius: 20px;
+    border-radius: 100px;
     cursor: pointer;
     font-size: 16px;
     margin-top: 12px;
     transition: background-color 0.3s ease;
+    text-decoration: none;
   }
 
   button:hover {
@@ -103,6 +137,15 @@
   .card-content {
     margin-left: 50px;
     margin-right: 50px;
+  }
+
+  .hr-line_mc {
+    background-color: #bc6c25;
+    width: 100%;
+    /* height: 1px; */
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid #bc6c25;
   }
 }
 
@@ -116,19 +159,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: var(--verde);
     overflow: hidden;
+
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+
+    padding-bottom: 15px;
+  }
+
+  .outer-container {
+    background-color: var(--verde);
   }
 
   .card-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Două coloane egale */
-    gap: 30px; /* Spațiere între carduri */
-    padding: 20px; /* Spațiere între carduri și marginea containerului */
-    max-width: 900px; /* Limităm lățimea containerului pentru a menține o dimensiune controlată */
-    width: 75%; /* Asigurăm că containerul ocupă întreaga lățime disponibilă */
-    margin: 0 auto; /* Centrare */
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 20px;
+    /* max-width: 1000px; */
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 50px;
   }
 
   .card {
@@ -136,34 +193,37 @@
     height: auto;
     background-color: var(--bej);
     border-radius: 20px;
-    padding: 20px; /* Spațiere între conținutul cardului și marginea acestuia */
-    box-sizing: border-box; /* Asigurăm că padding-ul nu crește dimensiunea totală a cardului */
-    text-align: center; /* Centrare text în carduri */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
   }
 
   .card h1 {
     color: var(--verde);
-    font-size: 12px;
-    margin-top: 15px;
-    margin-bottom: 10px; /* Spațiere între titlu și conținut */
+    font-size: 3vh;
+    margin-top: 12px;
+    margin-bottom: 12px;
   }
 
   .card p {
     color: var(--verde);
-    font-size: 12px;
-    margin-top: 16px; /* Spațiere între conținut și buton */
+    font-size: 2.1vh;
+    margin-top: 18px;
+
+    padding-bottom: 10px;
   }
 
-  .card button {
+  .card .button {
     background-color: #bc6c25;
-    padding: 4px 25px; /* Dimensiuni buton */
+    padding: 6px 32px;
     border: none;
     color: #fff;
     font-family: "Poppins";
     border-radius: 20px;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 2.3vh;
     transition: background-color 0.3s ease;
+    text-decoration: none;
   }
 
   .card button:hover {
@@ -175,9 +235,11 @@
     margin: 0;
     color: var(--bej);
     font-size: 48px;
+
+    padding-top: 30px;
   }
 
-  .hr-line {
+  .hr-line_mc {
     background-color: #bc6c25;
     width: 80%;
     /* height: 1px; */

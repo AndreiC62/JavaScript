@@ -1,96 +1,145 @@
-.cum-lucram-card-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scroll-snap-type: x mandatory;
-  padding-bottom: 20px;
-  background-color: var(--verde);
+@font-face {
+  font-family: "Parallone";
+  src: url(../parallone/Parallone-Regular.otf);
 }
 
-.cum-lucram-card {
-  min-width: 250px;
-}
-
-.cum-lucram-outer-container {
-  background-color: var(--verde);
-}
-
-.cum-lucram-outer-container h1 {
-  margin: 0;
-  padding-bottom: 35px;
-}
-
-.cum-lucram-card {
-  width: 250px;
-  height: 300px;
-  background-color: var(--bej);
-  border-radius: 8px;
-  box-sizing: border-box;
-  overflow: hidden;
-  position: relative;
-}
-
-.cum-lucram-card .cum-lucram-button {
-  position: absolute;
-  bottom: 10px;
-  margin-left: -6vh;
-}
-
-.cum-lucram-card h1 {
-  color: var(--verde);
-  font-size: 16px;
-  margin-top: 15px;
-}
-
-.cum-lucram-card p {
-  color: var(--verde);
-  font-size: 16px;
-  margin-top: 15px;
-}
-
-.cum-lucram-card-content {
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-}
-
-.cum-lucram-title,
-.cum-lucram-description {
-  margin: 0;
-}
-
-.cum-lucram-title {
-  font-family: "Poppins";
-  margin-bottom: 20px;
-  color: var(--bej);
-}
-
-.cum-lucram-description {
-  font-size: 15px;
-}
-
-.cum-lucram-button {
-  background-color: #bc6c25;
-  padding: 6px;
-  padding-left: 26px;
-  padding-right: 26px;
-  border: none;
-  color: #fff;
-  font-family: "Poppins";
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 12px;
-  transition: background-color 0.3s ease;
-}
-
-.cum-lucram-button:hover {
-  background-color: #2980b9;
+@font-face {
+  font-family: "Parallone Thin";
+  src: url(../parallone/Parallone-Thin.otf);
 }
 
 @media only screen and (max-width: 768px) {
+  .cum-lucram-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 20px;
+    background-color: var(--verde);
+  }
+
+  .cum-lucram-card {
+    min-width: 250px;
+  }
+
+  .cum-lucram-outer-container {
+    background-color: var(--verde);
+  }
+
+  .cum-lucram-outer-container h1 {
+    margin: 0;
+    padding-bottom: 35px;
+    font-family: "Parallone";
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36px;
+
+    padding-top: 30px;
+  }
+
+  .hr-line_cumLucram {
+    background-color: #bc6c25;
+    width: 85%;
+    /* height: 1px; */
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid #bc6c25;
+  }
+
+  .cum-lucram-card {
+    width: 250px;
+    height: 250px;
+    background-color: var(--bej);
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    /* color: var(--bej); */
+    text-align: center;
+    /* padding: 15px; */
+  }
+
+  .cum-lucram-card .cum-lucram-button {
+    position: absolute;
+    bottom: 10px;
+    /* margin-left: -6vh; */
+
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+  }
+
+  .cum-lucram-card h1 {
+    color: #bc6c25;
+    font-size: 52px;
+    margin-top: 15px;
+    font-family: "Parallone";
+    font-weight: 400;
+    line-height: 65px;
+  }
+
+  .titlu_card_cumLucram {
+    font-family: "Parallone";
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--verde);
+  }
+
+  .cum-lucram-card p {
+    color: var(--verde);
+    font-size: 16px;
+    margin-top: 15px;
+    font-family: "Parallone Thin";
+  }
+
+  .cum-lucram-card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cum-lucram-title,
+  .cum-lucram-description {
+    margin: 0;
+  }
+
+  .cum-lucram-title {
+    font-family: "Poppins";
+    margin-bottom: 20px;
+    color: var(--bej);
+  }
+
+  .cum_lucram_animated_color_container {
+    background-color: var(--verde);
+  }
+
+  .cum-lucram-description {
+    font-size: 15px;
+  }
+
+  .cum-lucram-button {
+    background-color: #bc6c25;
+    padding: 6px;
+    padding-left: 26px;
+    padding-right: 26px;
+    border: none;
+    color: #fff;
+    font-family: "Poppins";
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 12px;
+    transition: background-color 0.3s ease;
+  }
+
+  .cum-lucram-button:hover {
+    background-color: #2980b9;
+  }
+
   .cum-lucram-card-container {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -103,5 +152,184 @@
   .cum-lucram-card:nth-child(3),
   .cum-lucram-card:nth-child(6) {
     margin-right: 20px;
+  }
+}
+
+/* -------------------- VARIANTA DESKTOP ------------------
+-------------------- VARIANTA DESKTOP ------------------
+-------------------- VARIANTA DESKTOP ------------------
+-------------------- VARIANTA DESKTOP ------------------
+-------------------- VARIANTA DESKTOP ------------------
+-------------------- VARIANTA DESKTOP ------------------ */
+
+@media only screen and (min-width: 768px) {
+  .cum-lucram-card-container {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 45px;
+    padding: 50px;
+    padding-bottom: 50px;
+    background-color: var(--verde);
+    justify-content: center;
+  }
+
+  .cum_lucram_animated_color_container {
+    background-color: var(--verde);
+  }
+
+  .cum-lucram-card {
+    min-width: 320px;
+  }
+
+  .cum-lucram-outer-container {
+    background-color: var(--verde);
+  }
+
+  .cum-lucram-outer-container h1 {
+    margin: 0;
+    padding-bottom: 20px;
+    color: var(--bej);
+    font-size: 48px;
+
+    padding-top: 30px;
+  }
+
+  .cum-lucram-card {
+    width: 300px;
+    height: 230px;
+    background-color: var(--bej);
+    border-radius: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    /* color: var(--bej); */
+    text-align: center;
+    padding: 15px;
+  }
+
+  .cum-lucram-card .cum-lucram-button {
+    position: absolute;
+    bottom: 10px;
+    /* margin-left: -4vh; */
+
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+  }
+
+  .cum-lucram-card h1 {
+    color: var(--verde);
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .cum-lucram-card p {
+    color: var(--verde);
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  .cum-lucram-card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cum-lucram-title,
+  .cum-lucram-description {
+    margin: 0;
+  }
+
+  .cum-lucram-title {
+    font-family: "Poppins";
+    margin-bottom: 20px;
+    color: var(--bej);
+  }
+
+  .cum-lucram-description {
+    font-size: 15px;
+  }
+
+  .cum-lucram-button {
+    background-color: #bc6c25;
+    padding: 4px;
+    padding-left: 26px;
+    padding-right: 26px;
+    border: none;
+    color: #fff;
+    font-family: "Poppins";
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 12px;
+    transition: background-color 0.3s ease;
+  }
+
+  .cum-lucram-button:hover {
+    background-color: #7b3e10;
+  }
+
+  /* ----------------------------- DESIGN CARDURI ------------------------ */
+
+  .hr-line_cumLucram {
+    background-color: #bc6c25;
+    width: 85%;
+    /* height: 1px; */
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid #bc6c25;
+  }
+
+  .cum-lucram-card {
+    width: 250px;
+    height: 250px;
+    background-color: var(--bej);
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    /* color: var(--bej); */
+    text-align: center;
+    /* padding: 15px; */
+  }
+
+  .cum-lucram-card .cum-lucram-button {
+    position: absolute;
+    bottom: 10px;
+    /* margin-left: -6vh; */
+
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+  }
+
+  .cum-lucram-card h1 {
+    color: #bc6c25;
+    font-size: 52px;
+    margin-top: 15px;
+    font-family: "Parallone";
+    font-weight: 400;
+    line-height: 65px;
+    margin-bottom: 0;
+  }
+
+  .titlu_card_cumLucram {
+    font-family: "Parallone";
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--verde);
+  }
+
+  .cum-lucram-card p {
+    color: var(--verde);
+    font-size: 16px;
+    margin-top: 15px;
+    font-family: "Parallone Thin";
   }
 }

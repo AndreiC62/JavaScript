@@ -12,22 +12,33 @@ import GrowYourBusiness from "./Components/GrowYourBusiness";
 import Formular from "./Components/Formular";
 import EyesOnUs from "./Components/EyesOnUs";
 import Footer from "./Components/Footer";
+import LogoAnimation from "./Components/LogoAnimation";
 
 function App() {
+  const [logoAnimationFinished, setLogoAnimationFinished] =
+    React.useState(false);
+
   return (
     <div className="App">
-      <Navbar />
-      <MotivationalBanner />
-      <MobileComponent />
-      <MobileCards />
-      <DespreNoi />
-      <WhyUs />
-      <ConsultatieGratuita />
-      <CumLucram />
-      <GrowYourBusiness />
-      <Formular />
-      <EyesOnUs />
-      <Footer />
+      {!logoAnimationFinished && (
+        <LogoAnimation onFinish={() => setLogoAnimationFinished(true)} />
+      )}
+      {logoAnimationFinished && (
+        <>
+          <Navbar />
+          <MotivationalBanner />
+          <MobileComponent />
+          <MobileCards />
+          <DespreNoi />
+          <WhyUs />
+          <ConsultatieGratuita />
+          <CumLucram />
+          <GrowYourBusiness />
+          <Formular />
+          <EyesOnUs />
+          <Footer />
+        </>
+      )}
     </div>
   );
 }

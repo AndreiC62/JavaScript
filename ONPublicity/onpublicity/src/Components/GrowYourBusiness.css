@@ -3,66 +3,148 @@
   --bej: #fefae0;
 }
 
-.grow-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  background-color: var(--verde);
-  height: 600px;
+@font-face {
+  font-family: "Parallone";
+  src: url(../parallone/Parallone-Regular.otf);
 }
 
-.grow-image-outer {
-  /* padding-top: 10px; */
-  width: 85%;
-  height: auto;
-  max-width: 800px;
-  overflow: hidden;
-  padding-bottom: 20px;
+@font-face {
+  font-family: "Parallone Thin";
+  src: url(../parallone/Parallone-Thin.otf);
 }
 
-.grow-image {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+@media only screen and (max-width: 768px) {
+  .grow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--bej);
+    height: 600px;
+  }
+
+  .grow-image-outer {
+    width: 85%;
+    height: auto;
+    max-width: 800px;
+    overflow: hidden;
+    padding-bottom: 20px;
+  }
+
+  .grow_animated_color_background {
+    background-color: var(--verde);
+  }
+
+  .grow-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .grow-content {
+    text-align: center;
+  }
+
+  .grow-title {
+    font-size: 24px;
+    padding-bottom: 25px;
+    margin-bottom: 10px;
+    color: var(--verde);
+
+    font-family: "Parallone";
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .grow-text {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: var(--verde);
+
+    font-family: "Poppins";
+    line-height: 21px;
+
+    margin: 0 auto;
+    padding-bottom: 45px;
+  }
+
+  .grow-button {
+    background-color: #bc6c25;
+    padding: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: none;
+    color: #fff;
+    font-family: "Poppins";
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+
+  .grow-button:hover {
+    background-color: #0056b3;
+  }
 }
 
-.grow-content {
-  text-align: center;
-}
+@media only screen and (min-width: 768px) {
+  .grow-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--bej);
+    width: 85%;
+    margin: 0 auto;
+  }
 
-.grow-title {
-  font-size: 24px;
-  padding-bottom: 25px;
-  margin-bottom: 10px;
-  color: var(--bej);
-  font-family: "Poppins";
-}
+  .grow-image-outer {
+    width: 45%;
+  }
 
-.grow-text {
-  font-size: 14px;
-  margin-bottom: 20px;
-  color: var(--bej);
-  font-family: "Poppins";
-  margin: 0 auto;
-  padding-bottom: 35px;
-}
+  .grow-content {
+    width: 45%; /* Lățimea conținutului text */
+    text-align: left; /* Aliniere la stânga */
+  }
 
-.grow-button {
-  background-color: #bc6c25;
-  padding: 12px;
-  padding-left: 25px;
-  padding-right: 25px;
-  border: none;
-  color: #fff;
-  font-family: "Poppins";
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-}
+  .grow_main_container {
+    background-color: var(--bej);
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
-.grow-button:hover {
-  background-color: #0056b3;
+  .grow-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .grow-title {
+    color: var(--verde);
+  }
+
+  .grow-text {
+    color: var(--verde);
+    font-size: 14px;
+    padding-bottom: 12px;
+  }
+
+  .grow-button {
+    background-color: #bc6c25;
+    padding: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: none;
+    color: #fff;
+    font-family: "Poppins";
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
 }

@@ -1,0 +1,12 @@
+@keyframes animateLeftToRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-left-to-right {
+  animation: animateLeftToRight 1.5s ease-out forwards;
+}

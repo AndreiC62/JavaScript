@@ -3,6 +3,17 @@
   --bej: #fefae0;
 }
 
+@font-face {
+  font-family: "Parallone";
+  src: url(../parallone/Parallone-Regular.otf);
+}
+
+@font-face {
+  font-family: "Parallone Thin";
+  src: url(../parallone/Parallone-Thin.otf);
+}
+
+/* @media only screen and (max-width: 769px) { */
 .eyes-container {
   background-color: #fefae0;
   width: 100%;
@@ -36,11 +47,17 @@
 }
 
 .eyes-title {
-  margin-bottom: 12px; /* Adăugăm 12px de distanță între titlu și paragraf */
+  margin-bottom: 12px;
+  color: var(--verde);
+
+  font-family: "Parallone";
+  font-weight: 400;
+  line-height: 36px;
+  font-size: 32px;
 }
 
 .eyes-paragraph {
-  text-align: center; /* Centrăm textul paragrafului */
+  text-align: center;
 }
 
 .eyes-icons {
@@ -57,3 +74,4 @@
 .eyesonus__last1_icon {
   margin-right: 0;
 }
+/* } */

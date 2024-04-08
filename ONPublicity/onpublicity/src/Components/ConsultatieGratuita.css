@@ -3,60 +3,152 @@
   --bej: #fefae0;
 }
 
-.consultatie-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  background-color: var(--verde);
-  height: 600px;
+@font-face {
+  font-family: "Parallone";
+  src: url(../parallone/Parallone-Regular.otf);
 }
 
-.consultatie-image {
-  width: 85%;
-  max-width: 1000px;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  padding-top: 35px;
+@font-face {
+  font-family: "Parallone Thin";
+  src: url(../parallone/Parallone-Thin.otf);
 }
 
-.consultatie-content {
-  text-align: center;
+@media only screen and (max-width: 768px) {
+  .consultatie-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--verde);
+    height: 600px;
+  }
+
+  .consultatie-image-outer {
+    width: 85%;
+    height: auto;
+    max-width: 800px;
+    overflow: hidden;
+    padding-bottom: 20px;
+  }
+
+  .consultatie_animated_color_background {
+    background-color: var(--verde);
+  }
+
+  .consultatie-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .consultatie-content {
+    text-align: center;
+  }
+
+  .consultatie-title {
+    padding-bottom: 25px;
+    margin-bottom: 10px;
+    color: var(--bej);
+
+    font-family: "Parallone";
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .consultatie-text {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: var(--bej);
+
+    font-family: "Poppins";
+    line-height: 21px;
+
+    margin: 0 auto;
+    padding-bottom: 45px;
+  }
+
+  .consultatie-button {
+    background-color: #bc6c25;
+    padding: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: none;
+    color: #fff;
+    font-family: "Poppins";
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+
+  .consultatie-button:hover {
+    background-color: #0056b3;
+  }
 }
 
-.consultatie-title {
-  font-size: 24px;
-  padding-bottom: 25px;
-  margin-bottom: 10px;
-  color: var(--bej);
-  font-family: "Poppins";
-}
+@media only screen and (min-width: 768px) {
+  .consultatie-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--verde);
+    width: 85%;
+    margin: 0 auto;
+  }
 
-.consultatie-text {
-  font-size: 14px;
-  margin-bottom: 20px;
-  color: var(--bej);
-  font-family: "Poppins";
-  margin: 0 auto;
-  padding-bottom: 35px;
-}
+  .consultatie-image-outer {
+    width: 45%;
+  }
 
-.consultatie-button {
-  background-color: #bc6c25;
-  padding: 12px;
-  padding-left: 25px;
-  padding-right: 25px;
-  border: none;
-  color: #fff;
-  font-family: "Poppins";
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-}
+  .consultatie-content {
+    width: 45%;
+    text-align: left;
+  }
 
-.consultatie-button:hover {
-  background-color: #0056b3;
+  .consultatie_main_container {
+    background-color: var(--verde);
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .consultatie-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .consultatie-title {
+    color: var(--bej);
+
+    font-family: "Parallone";
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 62px;
+  }
+
+  .consultatie-text {
+    color: var(--bej);
+    font-size: 16px;
+    padding-bottom: 14px;
+  }
+
+  .consultatie-button {
+    background-color: #bc6c25;
+    padding: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: none;
+    color: #fff;
+    font-family: "Poppins";
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
 }

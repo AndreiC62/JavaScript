@@ -1,0 +1,35 @@
+:root {
+  --verde: #606c38;
+  --bej: #fefae0;
+}
+
+.logo-container-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.full_logoAnimation_container {
+  background-color: var(--bej);
+}
+
+.move-to-corner {
+  animation: moveToCorner 0.8s ease-in-out forwards;
+}
+
+@keyframes moveToCorner {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  20% {
+    transform: translate(0, 0) scale(1.2);
+  }
+  100% {
+    transform: translate(-1%, -1%) scale(0.1);
+  }
+}

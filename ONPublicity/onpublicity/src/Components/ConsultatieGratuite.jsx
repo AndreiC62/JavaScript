@@ -1,29 +1,41 @@
 import React from "react";
-import "./GrowYourBusiness.css";
+import "./ConsultatieGratuita.css"; // Fișierul CSS asociat
+import ConsultatieImage from "../img/cineSuntem.jpg";
+import AnimatedFromBottom from "./AnimatedFromBottom";
 
-const GrowYourBusiness = () => {
+const ConsultatieGratuita = () => {
   return (
-    <div className="grow-container">
-      <div className="grow-image-outer">
-        <img
-          src={require("../img/cineSuntem.jpg")}
-          alt="Grow Your Business"
-          className="grow-image"
-        />
-      </div>
-      <div className="grow-content">
-        <h1 className="grow-title">
-          BENEFICIAZĂ DE O <br /> CONSULTAȚIE GRATUITĂ
-        </h1>
-        <p className="grow-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget
-          ultricies velit. Vestibulum commodo viverra justo, ut vestibulum
-          libero facilisis at. Nulla facilisi.
-        </p>
-        <button className="grow-button">Solicită Detalii</button>
-      </div>
+    <div className="consultatie_animated_color_background">
+      <AnimatedFromBottom>
+        <div className="consultatie_main_container">
+          <div className="consultatie-container">
+            <div className="consultatie-image-outer">
+              <img
+                src={ConsultatieImage}
+                alt="Grow Your Business"
+                className="consultatie-image"
+              />
+            </div>
+            <div className="consultatie-content">
+              <h1 className="consultatie-title">
+                BENEFICIAZĂ E O CONSULTAȚIE GRATUITĂ
+              </h1>
+              <p className="consultatie-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                eget ultricies velit. Vestibulum commodo viverra justo, ut
+                vestibulum libero facilisis at. Nulla facilisi.
+              </p>
+              <AnimatedFromBottom>
+                <a href="#contactUs" className="consultatie-button">
+                  Solicită Detalii
+                </a>
+              </AnimatedFromBottom>
+            </div>
+          </div>
+        </div>
+      </AnimatedFromBottom>
     </div>
   );
 };
 
-export default GrowYourBusiness;
+export default ConsultatieGratuita;

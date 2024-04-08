@@ -2,11 +2,6 @@ import React from "react";
 import "./EyesOnUs.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faEnvelope,
-  faLocationDot,
-  faPhone,
-} from "@fortawesome/free-solid-svg-icons";
-import {
   faFacebook,
   faInstagram,
   faTelegram,
@@ -15,95 +10,99 @@ import {
   faYoutube,
   faPinterest,
 } from "@fortawesome/free-brands-svg-icons";
+import FadeInAnimation from "./FadeInAnimation";
 
 const EyesOnUs = () => {
   return (
-    <div className="eyes-container">
-      <div className="eyes-content">
-        <div className="eyes-icon-text">
-          <FontAwesomeIcon icon={faEnvelope} className="icon" />
-          <a href="mailto:onpublicity@example.com">onpublicity@gmail.com</a>
-        </div>
-        <div className="eyes-icon-text">
-          <FontAwesomeIcon icon={faLocationDot} className="icon" />
-          <a href="https://example.com/location">Calea Floresti</a>
-        </div>
-        <div className="eyes-icon-text">
-          <FontAwesomeIcon icon={faPhone} className="icon" />
-          <a href="tel:0721944958">0721 944 958</a>
-        </div>
-        <h1 className="eyes-title">Titlu H1</h1>
-        <p className="eyes-paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel ipsum
-          nec nisi scelerisque mattis. Duis auctor ligula ac nisi sollicitudin,
-          et fermentum tortor feugiat.
-        </p>
+    <FadeInAnimation>
+      <div className="eyes-container">
+        <div className="eyes-content">
+          <h1 className="eyes-title">FII CU OCHII PE NOI</h1>
 
-        {/* ----- RETELE DE SOCIALIZARE ---- */}
+          {/* <p className="eyes-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
+            ipsum nec nisi scelerisque mattis. Duis auctor ligula ac nisi
+            sollicitudin, et fermentum tortor feugiat.
+          </p> */}
 
-        <div className="eyes-icons">
-          <div className="eyesonus__social_media_row">
-            {/* FACEBOOK */}
-            <a href="/">
-              <FontAwesomeIcon
-                icon={faFacebook}
-                className="eyesonus__social_media_icons eyesonus__social_media_iconsfirst__social"
-              />
-            </a>
+          {/* ----- RETELE DE SOCIALIZARE ---- */}
 
-            {/* INSTAGRAM */}
-            <a href="/">
-              <FontAwesomeIcon
-                icon={faInstagram}
-                className="eyesonus__social_media_icons"
-              />
-            </a>
+          <div className="eyes-icons">
+            <div className="eyesonus__social_media_row">
+              {/* FACEBOOK */}
+              <a
+                href="https://www.facebook.com/profile.php?id=100095584172666"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={faFacebook}
+                  className="eyesonus__social_media_icons eyesonus__social_media_iconsfirst__social"
+                />
+              </a>
 
-            {/* TELEGRAM */}
-            <a href="/">
-              <FontAwesomeIcon
-                icon={faTelegram}
-                className="eyesonus__social_media_icons"
-              />
-            </a>
+              {/* INSTAGRAM */}
+              <a
+                href="https://www.instagram.com/onpublicity.md/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  className="eyesonus__social_media_icons"
+                />
+              </a>
 
-            {/* TIK TOK */}
-            <a href="/">
-              <FontAwesomeIcon
-                icon={faTiktok}
-                className="eyesonus__social_media_icons eyesonus__last1_icon"
-              />
-            </a>
-          </div>
+              {/* TELEGRAM */}
+              <a href="/" target="_blank" rel="noreferrer">
+                <FontAwesomeIcon
+                  icon={faTelegram}
+                  className="eyesonus__social_media_icons"
+                />
+              </a>
 
-          <div className="eyesonus__social_media_row">
-            {/* LinkedIn */}
-            <a href="/">
-              <FontAwesomeIcon
-                icon={faLinkedin}
-                className="eyesonus__social_media_icons eyesonus__first__social"
-              />
-            </a>
+              {/* TIK TOK */}
+              <a href="/" target="_blank" rel="noreferrer">
+                <FontAwesomeIcon
+                  icon={faTiktok}
+                  className="eyesonus__social_media_icons eyesonus__last1_icon"
+                />
+              </a>
+            </div>
 
-            {/* Youtube */}
-            <a href="/">
-              <FontAwesomeIcon
-                icon={faYoutube}
-                className="eyesonus__social_media_icons"
-              />
-            </a>
+            <div className="eyesonus__social_media_row">
+              {/* LinkedIn */}
+              <a
+                href="https://www.linkedin.com/company/onpublicity/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  className="eyesonus__social_media_icons eyesonus__first__social"
+                />
+              </a>
 
-            {/* Pinterest */}
-            <a href="/">
-              <FontAwesomeIcon
-                icon={faPinterest}
-                className="eyesonus__social_media_icons eyesonus__last1_icon"
-              />
-            </a>
+              {/* Youtube */}
+              <a href="/" target="_blank" rel="noreferrer">
+                <FontAwesomeIcon
+                  icon={faYoutube}
+                  className="eyesonus__social_media_icons"
+                />
+              </a>
+
+              {/* Pinterest */}
+              <a href="/" target="_blank" rel="noreferrer">
+                <FontAwesomeIcon
+                  icon={faPinterest}
+                  className="eyesonus__social_media_icons eyesonus__last1_icon"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </FadeInAnimation>
   );
 };
 

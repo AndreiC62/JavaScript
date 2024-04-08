@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Parallone";
+  src: url(../parallone/Parallone-Regular.otf);
+}
+
+@font-face {
+  font-family: "Parallone Thin";
+  src: url(../parallone/Parallone-Thin.otf);
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -28,10 +38,10 @@
   margin: 0 10px;
   text-decoration: none;
   color: rgb(0, 0, 0);
-  font-size: 20px;
   margin-right: 20px;
   color: #606c38;
-  font-family: Parallone;
+  font-family: "Parallone";
+  font-weight: 400;
 }
 
 /* ----------------- HAMBURGER MENU -------------- */
@@ -52,7 +62,7 @@
   display: block;
   width: 30px;
   height: 3px;
-  background-color: rgb(0, 0, 0);
+  background-color: #bc6c25;
   margin: 6px 0;
   transition: 0.5s;
 }
@@ -107,6 +117,10 @@
     transform: rotate(45deg) translate(-5px, -8px);
     width: 30px;
   }
+
+  .logo {
+    margin-left: -35px;
+  }
 }
 
 /* -------------------- LINK CONTAINER -----------  */
@@ -133,10 +147,10 @@
   margin-left: 45px;
   text-decoration: none;
   color: #606c38;
-  font-size: 20px; /* Ajustează dimensiunea fontului după preferințe */
+  font-size: 20px;
   transition: color 0.3s ease;
-  /* font-family: "Parallone Regular"; */
   font-weight: 500;
+  font-family: "Parallone";
 }
 
 .link-container.show {
@@ -145,6 +159,10 @@
 
 .language {
   display: none;
+}
+
+.icon-text {
+  font-family: "Parallone Thin";
 }
 
 .link-container .meniu-mail {
@@ -227,6 +245,6 @@
   }
 
   .navbar-center .navbar__links {
-    font-size: 15px;
+    font-size: 18px;
   }
 }

@@ -3,6 +3,20 @@
   --bej: #fefae0;
 }
 
+@font-face {
+  font-family: "Parallone";
+  src: url(../parallone/Parallone-Regular.otf);
+}
+
+@font-face {
+  font-family: "Parallone Thin";
+  src: url(../parallone/Parallone-Thin.otf);
+}
+
+.mobile_component_container {
+  background-color: var(--verde);
+}
+
 .mobile-component {
   width: 100%;
   height: 100%;
@@ -15,30 +29,20 @@
 .mobile-component p {
   color: var(--bej);
   font-size: 16px;
-  /* width: 80%; */
   font-family: "Poppins";
   display: inline-block;
   margin: 0 auto;
-  padding: 0;
+  padding-bottom: 35px;
   width: 80%;
-}
-
-.mobile-component .button {
-  background-color: #606c38;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  /* transition: background-color 0.3s ease; */
+  /* font-weight: 100; */
+  line-height: 24px;
 }
 
 .mobile-component .button:hover {
   background-color: #4d5933;
 }
 
-.mobile-component .button {
+.buton_solicita_oferta_mobil {
   background-color: #bc6c25;
   padding: 12px;
   padding-left: 25px;
@@ -46,11 +50,12 @@
   border: none;
   color: #fff;
   font-family: "Poppins";
-  border-radius: 20px;
+  border-radius: 100px;
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease;
   margin-bottom: 30px;
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 768px) {
